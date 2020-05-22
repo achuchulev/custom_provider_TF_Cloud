@@ -16,7 +16,7 @@ data "environment_variable" "commit" {
 
 data "environment_variable" "tag" {
   name                = "TFC_CONFIGURATION_VERSION_GIT_TAG"
-  fail_if_empty       = false
+  fail_if_empty       = true
   normalize_file_path = true
 }
 
